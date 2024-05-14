@@ -10,7 +10,7 @@ pts <- st_sf(pt = 1:2, geom = st_sfc(st_point(c(-52.45996, -20.05684)), st_point
 pol <- pts %>% st_bbox() %>% st_as_sfc(., crs = 4326)
 mask <- st_as_text(st_geometry(pol))
 
-bc_250 <- "/media/vinicio/Vinicio Lima/Arauco_MS/BASE_MS/IBGE/BC_250_2023/bc250_2023_11_23.gpkg"
+bc_250 <- "/IBGE/BC_250_2023/bc250_2023_11_23.gpkg"
 sf::st_layers(bc_250)
 
 hidro_ms <- st_read(bc_250, layer = "hid_trecho_drenagem_l",
