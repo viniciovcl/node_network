@@ -11,6 +11,7 @@
 library(dplyr)
 library(sf)
 library(lwgeom)
+library(mapview)
 
 # Subset da area - Limite exemplo
 # xmin      ymin      xmax      ymax
