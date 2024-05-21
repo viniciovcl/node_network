@@ -1,5 +1,5 @@
 # ------------------------------------------------------
-# Nó inicial da rede
+# Nó inicial de uma rede
 
 # A partir da camada de hidrografia encontrar os nós iniciais da rede.
 # Nascentes, cabeceiras
@@ -14,7 +14,7 @@ library(lwgeom)
 
 # Subset da area - Limite exemplo
 # xmin      ymin      xmax      ymax
-# -52.45996 -20.05684 -51.66483 -19.57296
+# -52.45996 -20.05684 -51.66483 -19.57295
 pts <- st_sf(pt = 1:2, geom = st_sfc(st_point(c(-52.45996, -20.05684)), st_point(c(-51.66483, -19.57296))), crs = 4326)
 pol <- pts %>% st_bbox() %>% st_as_sfc(., crs = 4326)
 mask <- st_as_text(st_geometry(pol))
