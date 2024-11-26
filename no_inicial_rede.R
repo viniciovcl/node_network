@@ -172,5 +172,3 @@ sessioninfo::session_info()
 
 rmarkdown::render("no_inicial_rede.R", output_format = "pdf_document")
 
-
-
